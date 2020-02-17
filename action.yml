@@ -1,0 +1,26 @@
+name: 'axn-container-build-publish'
+description: Build & publish a Docker image to GitHub Package Registry
+author: Mo <mo@enercity.de>
+inputs:
+  image_name:
+    description: name of the image.
+    require: true
+  tag:
+    description: tag you want to assign to the image.  
+    require: true
+  build_context:
+    description: the path in your repo that will serve as the build context.
+    require: true
+    default: '.'
+  dockerfile_path:
+    description: the full path (including the filename) to the dockerfile that you want to build.
+    require: true
+    default: Dockerfile
+outputs:
+  IMAGES_LINK:
+    description: the URL where you can view the hosted image on GitHub. 
+  IMAGE_URL:
+    description: the image URL to use in Docker. 
+runs:
+  using: docker
+  image: Dockerfile
