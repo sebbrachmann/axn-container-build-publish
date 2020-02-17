@@ -1,6 +1,6 @@
 name: 'axn-container-build-publish'
 description: Build & publish a Docker image to GitHub Package Registry
-author: Mo <mo@enercity.de>
+author: Mo <mo@brachmann.cc>
 inputs:
   image_name:
     description: name of the image.

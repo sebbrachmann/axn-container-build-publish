@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Publish Docker Image to GPR
-      uses: enercity/axn-container-build-publish@master
+      uses: sebbrachmann/axn-container-build-publish@master
       with:
         IMAGE_NAME: 'test-docker-action'
         TAG: 'tag-name'

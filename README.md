@@ -1,6 +1,6 @@
 # Github Action to Build and Publish a Container Image
 
-![Actions Status](https://github.com/enercity/axn-container-build-publish/workflows/Test/badge.svg)
+![Actions Status](https://github.com/sebbrachmann/axn-container-build-publish/workflows/Test/badge.svg)
 
 ## This Action Publishes Docker Images to the [GitHub Package Registry](https://github.com/features/package-registry).  
 
@@ -17,7 +17,7 @@ The GitHub Package Registry allows you to develop your code and host your packag
 
     docker.pkg.github.com/{OWNER}/{REPOSITORY}/{IMAGE_NAME}:{TAG}
     
-`OWNER` and `REPOSITORY` refer to a unique repository on GitHub, such as `enercity/axn-container-build-publish/`.
+`OWNER` and `REPOSITORY` refer to a unique repository on GitHub, such as `sebbrachmann/axn-container-build-publish/`.
 
 ## Tagging
 
@@ -49,7 +49,7 @@ jobs:
      #This Action Emits 2 Variables, IMAGE_SHA_NAME and IMAGE_URL
      #which you can reference in subsequent steps
     - name: Publish Docker Image to GPR
-      uses: enercity/axn-container-build-publish@master
+      uses: sebbrachmann/axn-container-build-publish@master
       id: docker
       with:
         IMAGE_NAME: 'test-docker-action'
