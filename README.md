@@ -1,6 +1,6 @@
 # Github Action to Build and Publish a Container Image
 
-![Actions Status](https://github.com/enercity/axn-container-build-publish/workflows/Tests/badge.svg)
+![Actions Status](https://github.com/enercity/axn-container-build-publish/workflows/Test/badge.svg)
 
 ## This Action Publishes Docker Images to the [GitHub Package Registry](https://github.com/features/package-registry).  
 

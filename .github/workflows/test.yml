@@ -12,8 +12,8 @@ jobs:
     - name: Publish Docker Image to GPR
       uses: enercity/axn-container-build-publish@master
       with:
-        IMAGE_NAME: 'test-docker-action-v2'
-        TAG: 'my-tag-name'
+        IMAGE_NAME: 'test-docker-action'
+        TAG: 'tag-name'
         DOCKERFILE_PATH: 'Dockerfile'
         BUILD_CONTEXT: '.'
       env:
